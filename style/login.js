@@ -13,7 +13,7 @@ document.getElementById('submit-btn').addEventListener('click',function(){
     //step 4 verify email and password
 
     if (email === 'tariqul@gmail.com'){
-        if(password === 'jannat'){
+        if(password === 'password'){
             window.location.href="bank.html"
         } else {
             alert('Please insert a correct password')
