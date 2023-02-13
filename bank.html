@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bapeer Bank</title>
+    <link rel="stylesheet" href="style/tailwind.config.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-300">
+    <header>
+        <div class="relative w-9/12 mx-auto">
+            <div onclick="window.location.href='login.html'" class="absolute top-0 right-0 bg-teal-300 text-xl rounded-lg hover:bg-teal-600 px-4 py-2">Log out</div>
+        </div>
+        <h1 class="text-amber-900 text-6xl text-center my-9">Let's get some <span class="text-sky-700">Moooooney</span></h1>
+
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-3 w-9/12 mx-auto text-white mb-5">
+                <div class="bg-green-500 px-7 py-5 text-center rounded-md">
+                    <h3 class="text-4xl mb-4">Deposit</h3>
+                    <h2 class="text-7xl">$<span id="diposited">00</span></h2>
+                </div>
+                
+                <div class="bg-sky-500 px-7 py-5 text-center rounded-md">
+                    <h3 class="text-4xl mb-4">Withdraw</h3>
+                    <h2 class="text-7xl">$<span id="withdrawed">00</span></h2>
+                </div>
+                
+                <div class="bg-red-600 px-7 py-5 text-center rounded-md">
+                    <h3 class="text-4xl mb-4">Balance</h3>
+                    <h2 class="text-7xl">$<span id="total-balance">1240</span></h2>
+                </div>
+                
+            </div>
+            <!-- diposite and withdraw  -->
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto text-white mt-12">
+                <div class="bg-green-500 px-7 py-5 text-center rounded-md">
+                    <h3 class="text-4xl mb-4">Please Deposit</h3>
+                    <input id="dipositing-money" class="w-8/12 mx-auto block my-3 rounded-lg p-2 text-black" type="number" placeholder="Amount you want to diposite">
+
+                    <button class="bg-cyan-700 text-xl text-white px-4 rounded-lg hover:bg-amber-800 py-2 font-semibold" id="diposite-btn">Diposite</button>
+                </div>
+                
+                <div class="bg-pink-700 px-7 py-5 text-center rounded-md">
+                    <h3 class="text-4xl mb-4">Please Withdraw</h3>
+                    <input id="withdrawing-money" class="w-8/12 mx-auto block my-3 rounded-lg p-2 text-black" type="number" placeholder="Amount you want to withdraw">
+
+                    <button class="bg-cyan-700 text-xl text-white px-4 rounded-lg hover:bg-amber-800 py-2 font-semibold" id="withdraw-btn">Withdraw</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+       
+    </script>
+    <script src="style/bank.js"></script>
+</body>
+</html>
