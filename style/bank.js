@@ -59,3 +59,15 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     }
 
 })
+
+
+// reset button
+document.getElementById('reset-btn').addEventListener('click', function(){
+    const diposited = document.getElementById('diposited')
+    const withdrawed = document.getElementById('withdrawed')
+    const totalBalance = document.getElementById('total-balance')
+    alert('It will remove your all data')
+    diposited.innerText = '00'
+    withdrawed.innerText = '00'
+    totalBalance.innerText = '00'
+})
